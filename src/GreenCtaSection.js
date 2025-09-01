@@ -4,7 +4,7 @@ import './GreenCtaSection.css';
 const GreenCtaSection = () => (
   <section className="py-5 green-cta-section">
     <div className="container text-center text-white">
-      <h2 className="fw-bold mb-2">Green Section</h2>
+      <h2 className="fw-bold mb-2">Lorem Ipsum</h2>
   <h5 className="mb-4 green-cta-title">Rorem ipsum dolor sit amet consectetur</h5>
   <p className="mb-4 green-cta-text">
         Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
