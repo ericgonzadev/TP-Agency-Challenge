@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Blog.css';
 
 const BLOG_API = 'https://futureoffounders.com/wp-json/wp/v2/posts';
 
@@ -72,7 +73,7 @@ function Blog() {
   };
 
   return (
-    <div className="container-fluid px-0" style={{ background: '#f7f8fa', minHeight: '100vh' }}>
+    <div className="container-fluid px-0 blog-container">
       {/* Header */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
         <div className="container">
@@ -84,25 +85,23 @@ function Blog() {
       </nav>
       <div className="container py-4">
         <div className="text-center mb-4">
-          <h2 className="fw-bold mb-2" style={{ fontSize: '2rem', color: '#222' }}>Gorem ipsum dolor sit amet</h2>
-          <div className="mb-2" style={{ borderBottom: '4px solid #3ec28f', width: '120px', margin: '0 auto' }}></div>
-          <h1 className="fw-bold" style={{ color: '#3ec28f', fontSize: '2.5rem' }}>Blog</h1>
+          <h2 className="fw-bold mb-2 blog-header-title">Gorem ipsum dolor sit amet</h2>
+          <div className="mb-2 blog-header-underline"></div>
+          <h1 className="fw-bold blog-header-main">Blog</h1>
         </div>
         {/* Search and Sort */}
         <div className="row mb-4 align-items-center">
           <div className="col-md-10 mb-2 mb-md-0">
             <input
-              className="form-control"
+              className="form-control blog-search-input"
               placeholder="Search..."
-              style={{ borderRadius: '2rem', paddingLeft: '2.5rem' }}
               value={search}
               onChange={handleSearch}
             />
           </div>
           <div className="col-md-2 text-md-end">
             <select
-              className="form-select"
-              style={{ borderRadius: '2rem' }}
+              className="form-select blog-sort-select"
               value={sort}
               onChange={handleSort}
             >
@@ -172,12 +171,12 @@ function BlogCard({ post }) {
   const date = new Date(post.date);
   const dateStr = date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
   return (
-    <Link to={`/blog/${post.id}`} style={{ textDecoration: 'none' }}>
-      <div className="card shadow-sm px-3 py-3 h-100" style={{ borderRadius: '22px', border: '1.5px solid #e5e5e5', minHeight: '370px', color: 'inherit' }}>
-        <img src={img} alt={post.title.rendered} style={{ width: '100%', borderRadius: '16px', marginBottom: '1.2rem', objectFit: 'cover', height: '150px' }} />
-        <div className="fw-bold mb-1" style={{ fontSize: '1.1rem', color: '#222' }}>{post.title.rendered}</div>
-        <div className="mb-1 text-muted" style={{ fontSize: '0.98rem' }}>{dateStr}</div>
-        <div className="mb-3" style={{ color: '#222', fontSize: '1.08rem', lineHeight: 1.35 }}>
+    <Link to={`/blog/${post.id}`} className="blog-card-link">
+      <div className="card shadow-sm px-3 py-3 h-100 blog-card">
+        <img src={img} alt={post.title.rendered} className="blog-card-img" />
+        <div className="fw-bold mb-1 blog-card-title">{post.title.rendered}</div>
+        <div className="mb-1 text-muted blog-card-date">{dateStr}</div>
+        <div className="mb-3 blog-card-content">
           {post.excerpt.rendered.replace(/<[^>]+>/g, '').slice(0, 120)}
         </div>
         <div className="fw-bold d-flex align-items-center" style={{ fontSize: '1.08rem', color: '#222' }}>

@@ -1,0 +1,119 @@
+.case-study-section-title {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+.case-study-section-title-green {
+  color: #3ec28f;
+  font-weight: 600;
+}
+.case-study-carousel {
+  min-height: 420px;
+}
+.case-study-arrow {
+  color: #3ec28f;
+  font-size: 36px;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+.case-study-arrow span {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+}
+.case-study-card {
+  background: #fff;
+  border: 2px solid #e6e8ec;
+  border-radius: 20px;
+  min-width: 380px;
+  max-width: 440px;
+  flex: 1;
+  margin: 0 8px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: none;
+  padding: 2.2rem 1.2rem;
+}
+.case-study-logo {
+  color: #a6ff4d;
+  font-weight: 600;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.case-study-title {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.case-study-subtitle {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 1rem;
+}
+.case-study-cta {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.case-study-cta-arrow {
+  color: #3ec28f;
+  font-size: 28px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.case-study-content {
+  color: #222;
+  font-size: 1.08rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+@media (max-width: 991px) {
+  .case-study-carousel-track > div {
+    min-width: 90vw !important;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 767px) {
+  .case-study-carousel-track {
+    gap: 0 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: hidden !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .case-study-carousel-track > div {
+    min-width: 68vw !important;
+    max-width: 68vw !important;
+    margin: 0 auto !important;
+    float: none !important;
+    border-radius: 24px !important;
+    padding: 2.2rem 2vw 2.2rem 2vw !important;
+    box-shadow: 0 2px 16px #0001 !important;
+  }
+  .case-arrow-mobile {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    font-size: 2.5rem !important;
+  }
+  .case-arrow-mobile-left { left: -4px !important; }
+  .case-arrow-mobile-right { right: -4px !important; }
+}

@@ -1,0 +1,76 @@
+/* Styles for CardsSection */
+.cards-carousel-section {
+  /* Section-level styles if needed */
+}
+.cards-carousel-title {
+  color: #3ec28f;
+  font-weight: 500;
+}
+.cards-carousel-heading {
+  font-size: 3rem;
+}
+.cards-carousel-underline {
+  width: 120px;
+  height: 4px;
+  background: #3ec28f;
+  border-radius: 2px;
+  margin-top: 8px;
+}
+.cards-carousel-track {
+  overflow: hidden;
+}
+.cards-carousel-card {
+  width: 320px;
+  min-height: 420px;
+  background: linear-gradient(180deg, #f8fafc 80%, #fff 100%);
+  box-shadow: 0 2px 16px #0001;
+  margin-right: 24px;
+  border: none;
+  border-radius: 1.5rem;
+}
+.cards-carousel-card:last-child {
+  margin-right: 0;
+}
+.cards-carousel-img {
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 1.5rem;
+}
+.cards-carousel-card-title {
+  font-size: 1.2rem;
+}
+.cards-carousel-card-desc {
+  color: #6c757d;
+  font-size: 1rem;
+}
+.cards-carousel-link {
+  color: #222;
+  text-decoration: none;
+}
+.cards-carousel-link-arrow {
+  margin-left: 8px;
+  color: #3ec28f;
+  font-size: 22px;
+}
+.cards-carousel-arrows {
+  position: absolute;
+  right: 0;
+  bottom: -56px;
+}
+.cards-carousel-arrow-btn {
+  opacity: 1;
+}
+.cards-carousel-arrow-btn.disabled {
+  opacity: 0.5;
+}
+.cards-carousel-arrow {
+  font-size: 28px;
+}
+@media (max-width: 991px) {
+  .cards-carousel-track > .cards-carousel-card { width: 90vw !important; max-width: 360px; }
+}
+@media (max-width: 767px) {
+  .cards-carousel-track { gap: 1rem !important; }
+  .cards-carousel-track > .cards-carousel-card { width: 95vw !important; min-width: 0; max-width: 98vw; }
+}

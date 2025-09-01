@@ -1,0 +1,72 @@
+/* Styles for HeroSection */
+.hero-section {
+  background: #fff;
+}
+.hero-section-decor-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-section-decor-line {
+  border-radius: 8px;
+  margin: 32px 0 0 0;
+}
+.hero-section-decor-line-gray {
+  background: #d3d6db;
+}
+.hero-section-decor-line-green {
+  background: linear-gradient(90deg, #a8e063 0%, #56ab2f 100%);
+}
+.hero-section-decor-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero-section-content {
+  z-index: 1;
+}
+.hero-section-title {
+  color: #222;
+  font-size: 4.2rem;
+  line-height: 1.08;
+}
+.hero-section-title-green {
+  color: #3ec28f;
+}
+.hero-section-underline {
+  width: 120px;
+  height: 6px;
+  background: #3ec28f;
+  border-radius: 4px;
+  margin: 0 auto 1rem auto;
+}
+.hero-section-subtitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #222;
+}
+.hero-section-cta-link {
+  color: #222;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.hero-section-cta-arrow {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3ec28f;
+}

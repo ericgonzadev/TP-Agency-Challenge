@@ -1,0 +1,33 @@
+/* Styles for FeaturesSection */
+.features-section-bg {
+  background: url('/map4.png') center/cover no-repeat;
+  min-height: 380px;
+}
+.features-section-title {
+  font-size: 2rem;
+  color: #222;
+}
+.features-section-underline {
+  width: 120px;
+  height: 6px;
+  background: #d3d6db;
+  border-radius: 4px;
+  margin: 0 auto 1rem auto;
+}
+.features-section-row {
+  min-height: 220px;
+}
+.features-section-icon {
+  font-size: 3rem;
+  color: #3ec28f;
+  margin-bottom: 18px;
+}
+.features-section-card-title {
+  color: #222;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+.features-section-card-desc {
+  color: #444;
+  font-size: 0.98rem;
+}

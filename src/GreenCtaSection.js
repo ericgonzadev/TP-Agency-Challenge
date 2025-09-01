@@ -1,11 +1,12 @@
 import React from 'react';
+import './GreenCtaSection.css';
 
 const GreenCtaSection = () => (
-  <section className="py-5" style={{ background: 'linear-gradient(90deg, #a8e063 0%, #56ab2f 100%)' }}>
+  <section className="py-5 green-cta-section">
     <div className="container text-center text-white">
       <h2 className="fw-bold mb-2">Green Section</h2>
-      <h5 className="mb-4" style={{ color: '#222' }}>Rorem ipsum dolor sit amet consectetur</h5>
-      <p className="mb-4" style={{ color: '#222' }}>
+  <h5 className="mb-4 green-cta-title">Rorem ipsum dolor sit amet consectetur</h5>
+  <p className="mb-4 green-cta-text">
         Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
       </p>
       <div className="d-flex justify-content-center gap-3 mb-3">

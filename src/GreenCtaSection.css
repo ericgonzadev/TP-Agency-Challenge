@@ -1,0 +1,10 @@
+/* Styles for GreenCtaSection */
+.green-cta-section {
+  background: linear-gradient(90deg, #a8e063 0%, #56ab2f 100%);
+}
+.green-cta-title {
+  color: #222;
+}
+.green-cta-text {
+  color: #222;
+}
