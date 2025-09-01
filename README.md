@@ -1,5 +1,6 @@
 ## LIVE LINKS
 HOME: [https://meek-gingersnap-c51ca6.netlify.app](https://meek-gingersnap-c51ca6.netlify.app)
+
 BLOG: [https://meek-gingersnap-c51ca6.netlify.app/blog](https://meek-gingersnap-c51ca6.netlify.app/blog)
 
 ## Required npm Packages
