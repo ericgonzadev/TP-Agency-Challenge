@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 import './Blog.css';
 
 const BLOG_API = 'https://futureoffounders.com/wp-json/wp/v2/posts';
@@ -74,15 +75,7 @@ function Blog() {
 
   return (
     <div className="container-fluid px-0 blog-container">
-      {/* Header */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
-        <div className="container">
-          <a className="navbar-brand" href="/">
-            <img src="/logo192.png" alt="Logo" width="40" height="40" />
-          </a>
-          {/* ...existing nav code... */}
-        </div>
-      </nav>
+      <Navbar />
       <div className="container py-4">
         <div className="text-center mb-4">
           <h2 className="fw-bold mb-2 blog-header-title">Gorem ipsum dolor sit amet</h2>

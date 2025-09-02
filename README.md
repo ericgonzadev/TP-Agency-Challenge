@@ -3,23 +3,28 @@ HOME: [https://meek-gingersnap-c51ca6.netlify.app](https://meek-gingersnap-c51ca
 
 BLOG: [https://meek-gingersnap-c51ca6.netlify.app/blog](https://meek-gingersnap-c51ca6.netlify.app/blog)
 
-## Required npm Packages
 
-The following npm packages are required and will be installed automatically with `npm install`:
+## Required npm Packages & Versions
 
-- @fortawesome/fontawesome-free
-- @fortawesome/free-solid-svg-icons
-- @fortawesome/react-fontawesome
-- @testing-library/dom
-- @testing-library/jest-dom
-- @testing-library/react
-- @testing-library/user-event
-- bootstrap
-- react
-- react-dom
-- react-router-dom
-- react-scripts
-- web-vitals
+The following npm packages (with tested versions) are required and will be installed automatically with `npm install`:
+
+| Package                          | Version (example/tested) |
+| -------------------------------- | ------------------------ |
+| react                            | 18.x                     |
+| react-dom                        | 18.x                     |
+| react-router-dom                 | 6.x                      |
+| react-scripts                    | 5.x                      |
+| bootstrap                        | 5.x                      |
+| @fortawesome/fontawesome-free    | 6.x                      |
+| @fortawesome/free-solid-svg-icons| 6.x                      |
+| @fortawesome/react-fontawesome   | 0.2.x                    |
+| @testing-library/dom             | 8.x                      |
+| @testing-library/jest-dom        | 5.x                      |
+| @testing-library/react           | 13.x                     |
+| @testing-library/user-event      | 14.x                     |
+| web-vitals                       | 2.x                      |
+
+> **Note:** These versions are typical for React 18 projects created with Create React App in 2024-2025. If you encounter version conflicts, check your `package.json` for the exact versions used in your project.
 
 ## Assumptions & Extra Features
 
@@ -31,7 +36,7 @@ The following npm packages are required and will be installed automatically with
 - No authentication or backend integration is assumed or implemented.
 
 
-## Available Scripts
+## Setup and Run App Locally
 
 In the project directory, you can run:
 
