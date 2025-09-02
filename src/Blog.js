@@ -18,7 +18,7 @@ function Blog() {
   const [sort, setSort] = useState('date-desc'); // 'date-desc', 'date-asc', 'name-asc', 'name-desc'
 
   useEffect(() => {
-    fetch(BLOG_API)
+    fetch(BLOG_API + '?_embed')
       .then(res => res.json())
       .then(data => {
         setPosts(data);
@@ -158,8 +158,11 @@ function Blog() {
 
 
 function BlogCard({ post }) {
-  // Use post.featured_media for image if available, else fallback
-  const img = 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80';
+  // Use featured image from API if available, else fallback
+  let img = 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80';
+  if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]?.source_url) {
+    img = post._embedded['wp:featuredmedia'][0].source_url;
+  }
   // Format date
   const date = new Date(post.date);
   const dateStr = date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });

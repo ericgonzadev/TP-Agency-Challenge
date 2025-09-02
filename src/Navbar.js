@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg'; // Replace with your logo file if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -17,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg" style={{ background: '#fcfcfd', borderBottom: '1px solid #e5e5e5', minHeight: 72 }}>
       <div className="container-fluid px-4">
-        <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src="logo-uploaded.jpg" alt="Logo" style={{ height: 38, marginRight: 24 }} />
+        <a className="navbar-brand d-flex align-items-center" href="/">
+          <img src="/logo-uploaded.jpg" alt="Logo" style={{ height: 38, marginRight: 24 }} />
         </a>
         <button
           className="navbar-toggler"
