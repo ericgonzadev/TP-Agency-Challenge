@@ -26,16 +26,6 @@ The following npm packages (with tested versions) are required and will be insta
 
 > **Note:** These versions are typical for React 18 projects created with Create React App in 2024-2025. If you encounter version conflicts, check your `package.json` for the exact versions used in your project.
 
-## Assumptions & Extra Features
-
-- The app is assumed to be run in a modern browser and on a standard React/Node.js environment.
-- Carousel sections (cards, case studies) are fully responsive and mobile-friendly, with navigation arrows always visible on mobile.
-- Placeholder images and text are used where no real content was provided.
-- The `_redirects` file is included for Netlify client-side routing support.
-- Extra attention was given to match the provided design screenshots as closely as possible, including custom CSS for spacing, card layout, and arrow positioning.
-- No authentication or backend integration is assumed or implemented.
-
-
 ## Setup and Run App Locally
 
 In the project directory, you can run:
@@ -67,3 +57,27 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
+## Assumptions & Extra Features
+
+- The app is assumed to be run in a modern browser and on a standard React/Node.js environment.
+- Carousel sections (cards, case studies) are fully responsive and mobile-friendly, with navigation arrows always visible on mobile.
+- Placeholder images and text are used where no real content was provided.
+- The `_redirects` file is included for Netlify client-side routing support.
+- Extra attention was given to match the provided design screenshots as closely as possible, including custom CSS for spacing, card layout, and arrow positioning.
+- No authentication or backend integration is assumed or implemented.
+
+## Blog Page API Integration
+
+The Blog page (`/blog`) dynamically fetches blog post data and featured images from an external API. This allows the blog content to be updated without redeploying the site. Key details:
+
+- **API Usage:**
+	- Blog cards and blog detail pages retrieve their content (title, excerpt, body, and images) from a REST API endpoint.
+	- Featured images for each blog post are loaded directly from the API response and displayed responsively.
+- **Image Handling:**
+	- Blog card images and detail images use the URLs provided by the API, ensuring up-to-date content and correct image sizing.
+	- On the blog detail page, images are styled to fit the screen width minus 100px for optimal readability.
+- **No Backend Required:**
+	- The app assumes the API is publicly accessible and does not require authentication.
+	- If the API is unavailable, placeholder content or error messages may be shown.
+
+This approach enables easy content management and ensures the blog section always displays the latest posts and images from the API source.
